@@ -1,0 +1,171 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background-color: #FF5C5A
+}
+
+p {
+   font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+	color: #f6f6f6;
+	transition: 0.3s;
+}
+
+a:hover {
+	color: #ddddff;
+}
+
+.recebida {
+	margin: 0.9vh  0 0 1.5vw;
+	color: #f3f3f3;
+	border-radius: 0.6em;
+	padding: 0.3em 0.6em;
+	max-width: 50%;
+	font-size: 1.2em;
+	background: #FF89A8;
+	font-family: Arial, Helvetica, sans-serif;
+	box-shadow: 0.03vh 0.06vw 3px rgba(51, 51, 51, 0.15);
+	transition: 0.3s;
+}
+
+.propria {
+	margin: 0.9vh 1.5vw 0 0 ;
+	color: #f3f3f3;
+	border-radius: 0.6em;
+	padding: 0.3em 0.6em;
+	font-family: Arial, Helvetica, sans-serif;
+	max-width: 50%;
+	font-size: 1.2em;
+	background: #696CFF;
+	box-shadow: 0.03vh 0.06vw 3px rgba(51, 51, 51, 0.15);
+	align-self: flex-end;
+	transition: 0.3s;
+}
+
+#title {
+	font-size: 2.1em;
+	color: purple;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 1.5px;
+	margin: 3vh auto;
+	text-align: center;
+	font-weight: bold;
+}
+
+#feedBack {
+	align-items: flex-start;
+	display: block;
+	width: 75vw;
+	height: 60vh;
+	margin: 0 auto;
+	display: flex;
+	border-top-left-radius: 0.3em;
+	border-top-right-radius: 0.3em;
+	background: #D2D5FF;
+	flex-direction: column;
+	padding: 0.3em;
+	overflow-y: auto;
+}
+
+
+#mensagem::placeholder {
+	color: #D2D5FF;
+}
+
+#mensagem {
+	font-family: sans-serif;
+	background: #A767FF;
+	border-radius: 0.75em;
+	font-size: 1.2em;
+	letter-spacing: 0.45px;
+	padding: 0.6em 0.6em;
+	color: white;
+	width: 69vw;
+	height: 9vh;
+	resize: none;
+	align-content: center;
+	align-self: center;
+	margin-left: 0.6vw;
+	overflow-x: auto;
+}
+
+#send {
+	align-content: center;
+	align-self: center;
+	width: 3.6vw;
+	height: 3.6vw;
+	border: none;
+	background: none;
+	background-image: url('/images/send-button.png');
+	background-position: center;
+	background-size: 72%;
+	background-repeat: no-repeat;
+	margin-left: 0.3vw;
+}
+
+#input {
+	display: flex;
+	background: #F2F2F2;
+	width: 75vw;
+	border-bottom-left-radius: 0.3em;
+	border-bottom-right-radius: 0.3em;
+	margin: 0 auto;
+	padding: 0.3em 0;
+	border: 3px solid #F2F2F2;
+}
