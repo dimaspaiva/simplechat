@@ -1,6 +1,6 @@
 console.log('testando regex')
 
-regex = /\([1-9]{2}\)\s?[1-9]\s?[1-9]{4}\-?[1-9]{4}/
+regex = /\(?[1-9]{2}\)?\s?[1-9]\s?[1-9]{4}\-?[1-9]{4}/
 
 const numeros = [
    '(35) 9 9866-7352',  //ok
@@ -21,8 +21,10 @@ const numeros = [
    '(35)999999',        //no
    '(35)9999999',       //no
    '(35)99999999',      //no
+   '(01)99999999',      //no
+   '(10)99999999',      //no
 ]
 
 for (const i in numeros) {
-   console.log(numeros[i] + ' - ' + numeros[i].match(regex))
+   console.log(numeros[i] + ' - ' + (numeros[i].match(regex) ? true : false))
 }
