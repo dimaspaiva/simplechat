@@ -26,6 +26,6 @@ io.on('connection', (socket) => {
    })
 })
 
-http.listen(3000, () => {
+http.listen(80, () => {
    console.log('Rodando em localhost:3000')
 })
