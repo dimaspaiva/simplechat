@@ -7,6 +7,7 @@
 
    * 02/02/19
       Criação do servidor, envio e recebimento de mensagens e reconhecimento de números
+   Fim.
 
 ## Regras para identificação
 
